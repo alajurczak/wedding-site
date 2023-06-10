@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/wedding-site/static/js/main.2775aae8.js",
+    "static/js/787.097afb99.chunk.js": "/wedding-site/static/js/787.097afb99.chunk.js",
+    "index.html": "/wedding-site/index.html",
+    "main.2775aae8.js.map": "/wedding-site/static/js/main.2775aae8.js.map",
+    "787.097afb99.chunk.js.map": "/wedding-site/static/js/787.097afb99.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2775aae8.js"
+  ]
+}
