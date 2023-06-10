@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         margin: 0 auto;
         word-wrap: break-word;
-        font-family: "Italiana", sans-serif;
+        font-family: "Cormorant", sans-serif;
         background-color: ${({ theme }) => theme.colors.concrete};
     }
 `;
