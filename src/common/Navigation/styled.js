@@ -37,7 +37,7 @@ export const NavContainer = styled.nav`
   height: 500px;
   display: flex;
   align-items: center;
-  animation: ${fadeIn} 1.5s ease-in-out forwards;
+  animation: ${fadeIn} 0.5s ease-in-out forwards;
   transition: filter 0.2s ease;
 `;
 
