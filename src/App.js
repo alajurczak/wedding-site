@@ -1,5 +1,11 @@
+import { Navigation } from "./common/Navigation";
+
 function App() {
-  return <div>bjhbvdhs</div>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
 export default App;
