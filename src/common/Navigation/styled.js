@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import backgroundImage from "./Logo.png";
+const mobileMin = ({ theme }) => theme.breakpoints.mobileMin;
+const mobileMax = ({ theme }) => theme.breakpoints.mobileMin;
 
 const fadeIn = keyframes`
     0% {
@@ -27,11 +29,17 @@ export const Logo = styled.div`
   width: 500px;
   height: 500px;
   position: absolute;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    width: 350px;
+    height: 350px;
+  }
 `;
+
 export const NavContainer = styled.nav`
   position: relative;
   backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
   left: 16%;
   transform: translate(-50%);
   height: 500px;
@@ -39,6 +47,22 @@ export const NavContainer = styled.nav`
   align-items: center;
   animation: ${fadeIn} 0.5s ease-in-out forwards;
   transition: filter 0.2s ease;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    left: 2%;
+    width: 500px;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    left: 2%;
+    width: 350px;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 `;
 
 export const NavigationList = styled.div`
@@ -46,6 +70,19 @@ export const NavigationList = styled.div`
   list-style-type: none;
   margin: 0 10px;
   width: 300px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    width: 200px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const StyledNavLink = styled.a`

@@ -4,4 +4,8 @@ export const theme = {
     bizarre: "#f2dee1",
     concrete: "#f2f2f2",
   },
+  breakpoints: {
+    mobileMin: 500,
+    mobileMax: 1000,
+  },
 };
