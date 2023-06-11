@@ -1,5 +1,9 @@
-import { Container, FooterContainer, Heart } from "./styled";
+import { Container, Heart } from "./styled";
 
 export const Footer = () => {
-  return <Heart></Heart>;
+  return (
+    <Container>
+      <Heart></Heart>
+    </Container>
+  );
 };
