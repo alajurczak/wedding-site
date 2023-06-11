@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import backgroundImage from "./Logo.png";
-const mobileMin = ({ theme }) => theme.breakpoints.mobileMin;
-const mobileMax = ({ theme }) => theme.breakpoints.mobileMin;
 
 const fadeIn = keyframes`
     0% {
