@@ -1,9 +1,11 @@
-import { Navigation } from "./common/Navigation";
+import { InitialSite } from "./features/InitialSite";
+import { Home } from "./features/Home";
 
 function App() {
   return (
     <>
-      <Navigation />
+      {/* <InitialSite /> */}
+      <Home />
     </>
   );
 }
