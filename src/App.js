@@ -9,6 +9,7 @@ function App() {
         <Route path="/initialSite" element={<InitialSite />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Navigate to="/initialSite" />} />
+        <Route path="*" element={<InitialSite />} />
       </Routes>
     </HashRouter>
   );
