@@ -18,12 +18,13 @@ export const Container = styled.div`
 `;
 
 export const MainContainer = styled.div`
-  background-color: ${({ theme }) => theme.colors.bizarre};
   height: 500px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: solid 2px ${({ theme }) => theme.colors.pink};
+  border-top: solid 2px ${({ theme }) => theme.colors.pink};
 `;
 
 export const HeaderContainer = styled.div`
@@ -47,4 +48,18 @@ export const Date = styled.p`
   font-size: 50px;
   text-align: center;
   letter-spacing: 10px;
+`;
+export const Line = styled.div`
+  width: 500px;
+  height: 5px;
+  background-image: radial-gradient(
+    circle at 48.46% 51.08%,
+    #fff7f4 0,
+    #ffe4e2 25%,
+    #f2cdcd 50%,
+    #e3b6ba 75%,
+    #d8a4ad 100%
+  );
+  margin: 0 auto;
+  border-radius: 3px;
 `;
