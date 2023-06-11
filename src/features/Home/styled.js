@@ -23,8 +23,6 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: solid 2px ${({ theme }) => theme.colors.pink};
-  border-top: solid 2px ${({ theme }) => theme.colors.pink};
 `;
 
 export const HeaderContainer = styled.div`
@@ -41,7 +39,7 @@ export const Header = styled.h1`
   font-size: 150px;
   font-weight: 300;
   letter-spacing: 20px;
-  animation: ${slideRightLeft} 35s linear infinite;
+  animation: ${slideRightLeft} 15s linear infinite;
 `;
 
 export const Date = styled.p`

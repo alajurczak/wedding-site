@@ -37,6 +37,7 @@ export const InitialSite = () => {
           <NavigationList>
             <li>
               <StyledNavLink
+                to="/home"
                 style={{ animationDelay: "0s" }}
                 onMouseEnter={() => handleLinkHover(0)}
                 isActive={activeLink === 0}
@@ -46,6 +47,7 @@ export const InitialSite = () => {
             </li>
             <li>
               <StyledNavLink
+                to="/aboutWedding"
                 style={{ animationDelay: "0.2s" }}
                 onMouseEnter={() => handleLinkHover(1)}
                 isActive={activeLink === 1}
@@ -55,6 +57,7 @@ export const InitialSite = () => {
             </li>
             <li>
               <StyledNavLink
+                to="/invitations"
                 style={{ animationDelay: "0.3s" }}
                 onMouseEnter={() => handleLinkHover(2)}
                 isActive={activeLink === 2}
@@ -64,6 +67,7 @@ export const InitialSite = () => {
             </li>
             <li>
               <StyledNavLink
+                to="/qa"
                 style={{ animationDelay: "0.4s" }}
                 onMouseEnter={() => handleLinkHover(3)}
                 isActive={activeLink === 3}
@@ -73,6 +77,7 @@ export const InitialSite = () => {
             </li>
             <li>
               <StyledNavLink
+                to="/schedule"
                 style={{ animationDelay: "0.5s" }}
                 onMouseEnter={() => handleLinkHover(4)}
                 isActive={activeLink === 4}
@@ -82,6 +87,7 @@ export const InitialSite = () => {
             </li>
             <li>
               <StyledNavLink
+                to="/guestbook"
                 style={{ animationDelay: "0.6s" }}
                 onMouseEnter={() => handleLinkHover(5)}
                 isActive={activeLink === 5}
@@ -91,6 +97,7 @@ export const InitialSite = () => {
             </li>
             <li>
               <StyledNavLink
+                to="/photos"
                 style={{ animationDelay: "0.6s" }}
                 onMouseEnter={() => handleLinkHover(6)}
                 isActive={activeLink === 6}

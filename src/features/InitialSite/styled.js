@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import backgroundImage from "./Logo.png";
+import { NavLink } from "react-router-dom";
 
 const fadeIn = keyframes`
     0% {
@@ -83,15 +84,24 @@ export const NavigationList = styled.div`
   }
 `;
 
-export const StyledNavLink = styled.a`
+export const StyledNavLink = styled(NavLink)`
   line-height: 2;
   text-decoration: none;
   opacity: 0;
   animation: ${fadeIn} 1.5s ease-in-out forwards;
   transition: filter 0.2s ease;
+  color: black;
+
+  &:link {
+    color: black;
+  }
 
   &:hover {
     cursor: pointer;
     font-weight: bold;
+  }
+
+  &:active {
+    color: black;
   }
 `;
