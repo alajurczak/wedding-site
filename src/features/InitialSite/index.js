@@ -40,7 +40,6 @@ export const InitialSite = () => {
                 to="/home"
                 style={{ animationDelay: "0s" }}
                 onMouseEnter={() => handleLinkHover(0)}
-                isActive={activeLink === 0}
               >
                 STRONA GŁÓWNA
               </StyledNavLink>
@@ -50,7 +49,6 @@ export const InitialSite = () => {
                 to="/aboutWedding"
                 style={{ animationDelay: "0.2s" }}
                 onMouseEnter={() => handleLinkHover(1)}
-                isActive={activeLink === 1}
               >
                 O ŚLUBIE
               </StyledNavLink>
@@ -60,7 +58,6 @@ export const InitialSite = () => {
                 to="/invitations"
                 style={{ animationDelay: "0.3s" }}
                 onMouseEnter={() => handleLinkHover(2)}
-                isActive={activeLink === 2}
               >
                 ZAPROSZENIA
               </StyledNavLink>
@@ -70,7 +67,6 @@ export const InitialSite = () => {
                 to="/qa"
                 style={{ animationDelay: "0.4s" }}
                 onMouseEnter={() => handleLinkHover(3)}
-                isActive={activeLink === 3}
               >
                 Q&A
               </StyledNavLink>
@@ -80,7 +76,6 @@ export const InitialSite = () => {
                 to="/schedule"
                 style={{ animationDelay: "0.5s" }}
                 onMouseEnter={() => handleLinkHover(4)}
-                isActive={activeLink === 4}
               >
                 HARMONOGRAM
               </StyledNavLink>
@@ -90,7 +85,6 @@ export const InitialSite = () => {
                 to="/guestbook"
                 style={{ animationDelay: "0.6s" }}
                 onMouseEnter={() => handleLinkHover(5)}
-                isActive={activeLink === 5}
               >
                 KSIĘGA GOŚCI
               </StyledNavLink>
@@ -100,7 +94,6 @@ export const InitialSite = () => {
                 to="/photos"
                 style={{ animationDelay: "0.6s" }}
                 onMouseEnter={() => handleLinkHover(6)}
-                isActive={activeLink === 6}
               >
                 ZDJĘCIA ŚLUBNE
               </StyledNavLink>
