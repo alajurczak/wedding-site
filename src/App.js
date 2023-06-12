@@ -1,5 +1,6 @@
 import { InitialSite } from "./features/InitialSite";
 import { Home } from "./features/Home";
+import { AboutWedding } from "./features/AboutWedding";
 import { Routes, HashRouter, Route, Navigate } from "react-router-dom";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/initialSite" element={<InitialSite />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/aboutWedding" element={<AboutWedding />} />
         <Route path="/" element={<Navigate to="/initialSite" />} />
         <Route path="*" element={<InitialSite />} />
       </Routes>
