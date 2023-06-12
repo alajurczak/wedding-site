@@ -5,6 +5,11 @@ import backgroundImage from "../../features/InitialSite/Logo.png";
 export const NavContainer = styled.div`
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 `;
 
 export const NavigationList = styled.div`
