@@ -15,6 +15,10 @@ export const Container = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    overflow-y: auto;
+  }
 `;
 
 export const MainContainer = styled.div`
@@ -40,13 +44,36 @@ export const Header = styled.h1`
   font-weight: 300;
   letter-spacing: 20px;
   animation: ${slideRightLeft} 15s linear infinite;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    margin-top: 80px;
+    font-size: 90px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    font-size: 78px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 36px;
+    margin-top: 0px;
+  }
 `;
 
 export const Date = styled.p`
   font-size: 50px;
   text-align: center;
   letter-spacing: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 25px;
+  }
 `;
+
 export const Line = styled.div`
   width: 500px;
   height: 5px;
@@ -60,4 +87,8 @@ export const Line = styled.div`
   );
   margin: 0 auto;
   border-radius: 3px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    width: 250px;
+  }
 `;

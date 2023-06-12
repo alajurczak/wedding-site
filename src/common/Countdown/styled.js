@@ -10,9 +10,24 @@ export const Container = styled.div`
 
 export const Text = styled.p`
   font-size: 35px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 20px;
+  }
 `;
 
 export const Counter = styled.p`
   font-size: 30px;
   letter-spacing: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 25px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 20px;
+  }
 `;

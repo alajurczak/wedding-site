@@ -11,7 +11,12 @@ export const NavigationList = styled.div`
   font-size: 20px;
   list-style-type: none;
   display: flex;
+  align-items: center;
   margin: 10px auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledNavLink = styled(NavLink)`
@@ -23,6 +28,10 @@ export const StyledNavLink = styled(NavLink)`
     color: black;
   }
 
+  &:visited {
+    color: black;
+  }
+
   &:hover {
     cursor: pointer;
     border-bottom: solid 2px ${({ theme }) => theme.colors.pink};
@@ -30,6 +39,18 @@ export const StyledNavLink = styled(NavLink)`
 
   &:active {
     color: black;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 20px;
   }
 `;
 
@@ -39,6 +60,16 @@ export const LogoLink = styled(NavLink)`
   background-size: cover;
   width: 70px;
   height: 70px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    width: 70px;
+    height: 70px;
+  }
 `;
 
 export const NavigationLogo = styled.div`
