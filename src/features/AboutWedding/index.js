@@ -17,6 +17,7 @@ import {
   Location,
 } from "./styled";
 import { Navigation } from "../../common/Navigation";
+import { Tile } from "../../common/Tile";
 
 export const AboutWedding = () => {
   const googleMapsLink = "https://goo.gl/maps/wU7mLbbh4PuXpgZQA";
@@ -44,16 +45,15 @@ export const AboutWedding = () => {
             <Address>Mazowiecka 163, 05-825 Opypy | Warszawa</Address>
           </MainInformations>
         </Description>
-        <div>
-          <WrapperLink
-            href={googleMapsLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Location></Location>
-          </WrapperLink>
-        </div>
+        <WrapperLink
+          href={googleMapsLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Location></Location>
+        </WrapperLink>
       </Informations>
+      <Tile />
     </>
   );
 };
