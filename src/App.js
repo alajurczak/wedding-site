@@ -2,6 +2,7 @@ import { InitialSite } from "./features/InitialSite";
 import { Home } from "./features/Home";
 import { AboutWedding } from "./features/AboutWedding";
 import { QAPage } from "./features/QAPage";
+import { RSVP } from "./features/RSVP";
 import {
   Routes,
   HashRouter,
@@ -29,7 +30,7 @@ function App() {
         <Route path="/initialSite" element={<InitialSite />} />
         <Route path="/home" element={<Home />} />
         <Route path="/aboutWedding" element={<AboutWedding />} />
-        {/* <Route path="/invitations" element={<AboutWedding />} /> */}
+        <Route path="/invitations" element={<RSVP />} />
         <Route path="/qa" element={<QAPage />} />
         {/* <Route path="/schedule" element={<AboutWedding />} />
         <Route path="/guestbook" element={<AboutWedding />} /> */}
