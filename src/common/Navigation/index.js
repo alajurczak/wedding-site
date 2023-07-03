@@ -22,7 +22,7 @@ export const Navigation = () => {
           <StyledNavLink to="/aboutWedding">O ŚLUBIE</StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/invitations">ZAPROSZENIA</StyledNavLink>
+          <StyledNavLink to="/invitations">RSVP</StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/qa">Q&A</StyledNavLink>

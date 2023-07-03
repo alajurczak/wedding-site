@@ -59,7 +59,7 @@ export const InitialSite = () => {
                 style={{ animationDelay: "0.3s" }}
                 onMouseEnter={() => handleLinkHover(2)}
               >
-                ZAPROSZENIA
+                RSVP
               </StyledNavLink>
             </li>
             <li>
