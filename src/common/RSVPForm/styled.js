@@ -13,6 +13,7 @@ export const Label = styled.label`
 `;
 export const Input = styled.input`
   padding: 2px 5px;
+  margin: 0 10px 0 0;
 `;
 export const Button = styled.button`
   margin: 20px auto;
@@ -22,6 +23,7 @@ export const Button = styled.button`
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 `;
 export const Container = styled.div`
   display: grid;

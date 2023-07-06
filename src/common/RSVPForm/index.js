@@ -7,10 +7,33 @@ import {
   Wrapper,
   WrapperInput,
 } from "./styled";
+import emailjs from "emailjs-com";
 
 export const RSVPForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        event.target,
+        "YOUR_USER_ID"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Formularz został wysłany!");
+        },
+        (error) => {
+          console.error(error.text);
+          alert("Wystąpił błąd podczas wysyłania formularza.");
+        }
+      );
+  };
+
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <Container>
         <Wrapper>
           <Label htmlFor="firstName">Imię</Label>
