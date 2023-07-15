@@ -24,13 +24,13 @@ export const RSVPForm = () => {
         "service_uuh0msb",
         "template_kn5r7fm",
         event.target,
-        "2brYp790je6GaCPwf"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
           toast.success("Dziękujemy za wypełnienie!");
-          formRef.current.reset(); // Wyczyść formularz po wysłaniu
+          formRef.current.reset();
         },
         (error) => {
           console.error(error.text);
