@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import {
   Form,
   Label,
@@ -8,32 +9,38 @@ import {
   WrapperInput,
 } from "./styled";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { StyledToastContainer } from "./styled";
 
 export const RSVPForm = () => {
+  const formRef = useRef(null);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_uuh0msb",
+        "template_kn5r7fm",
         event.target,
-        "YOUR_USER_ID"
+        "2brYp790je6GaCPwf"
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert("Formularz został wysłany!");
+          toast.success("Dziękujemy za wypełnienie!");
+          formRef.current.reset(); // Wyczyść formularz po wysłaniu
         },
         (error) => {
           console.error(error.text);
-          alert("Wystąpił błąd podczas wysyłania formularza.");
+          toast.error("Ups... coś poszło nie tak...");
         }
       );
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} ref={formRef}>
       <Container>
         <Wrapper>
           <Label htmlFor="firstName">Imię</Label>
@@ -94,6 +101,7 @@ export const RSVPForm = () => {
       </Wrapper>
 
       <Button type="submit">Wyślij</Button>
+      <StyledToastContainer />
     </Form>
   );
 };

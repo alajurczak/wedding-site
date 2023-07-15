@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import styled from "styled-components";
 
 export const Form = styled.form`
@@ -24,6 +25,11 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 export const Container = styled.div`
   display: grid;
@@ -40,4 +46,19 @@ export const Wrapper = styled.div`
 export const WrapperInput = styled.div`
   display: flex;
   flex-direction: row;
+`;
+export const StyledToastContainer = styled(ToastContainer)`
+  .Toastify__toast--success {
+    background-color: #e7eaee;
+    color: black;
+    font-size: 16px;
+  }
+  .Toastify__progress-bar {
+    background-color: white;
+  }
+  .Toastify__toast--error {
+    background-color: #e7eaee;
+    color: black;
+    font-size: 16px;
+  }
 `;
