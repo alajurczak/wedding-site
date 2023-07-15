@@ -37,20 +37,11 @@ export const InitialSite = () => {
           <NavigationList>
             <li>
               <StyledNavLink
-                to="/home"
-                style={{ animationDelay: "0s" }}
-                onMouseEnter={() => handleLinkHover(0)}
-              >
-                STRONA GŁÓWNA
-              </StyledNavLink>
-            </li>
-            <li>
-              <StyledNavLink
                 to="/aboutWedding"
                 style={{ animationDelay: "0.2s" }}
                 onMouseEnter={() => handleLinkHover(1)}
               >
-                O ŚLUBIE
+                STRONA GŁÓWNA
               </StyledNavLink>
             </li>
             <li>

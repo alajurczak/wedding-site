@@ -16,10 +16,7 @@ export const Navigation = () => {
       </NavigationLogo>
       <NavigationList>
         <li>
-          <StyledNavLink to="/home">STRONA GŁÓWNA</StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/aboutWedding">O ŚLUBIE</StyledNavLink>
+          <StyledNavLink to="/aboutWedding">STRONA GŁÓWNA</StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/invitations">RSVP</StyledNavLink>
