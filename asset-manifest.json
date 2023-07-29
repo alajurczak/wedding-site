@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/wedding-site/static/css/main.98ec47ca.css",
-    "main.js": "/wedding-site/static/js/main.c6e313d0.js",
+    "main.js": "/wedding-site/static/js/main.9dacac47.js",
     "static/js/787.097afb99.chunk.js": "/wedding-site/static/js/787.097afb99.chunk.js",
     "static/media/location.png": "/wedding-site/static/media/location.2388847115d1d7c192dd.png",
     "static/media/Logo.png": "/wedding-site/static/media/Logo.f3d1fc699dac07a0e087.png",
     "static/media/reception.svg": "/wedding-site/static/media/reception.0876c06272b7234627c5971800111db4.svg",
+    "static/media/map.svg": "/wedding-site/static/media/map.0fc68b60cbd05997de24294a9d0192c7.svg",
+    "static/media/coffee.svg": "/wedding-site/static/media/coffee.2c11f77bb9e0b75c1bf9bd1db65dafa7.svg",
     "static/media/ceremony.svg": "/wedding-site/static/media/ceremony.f5deca8c24ab42d4c0575f24aade9b5e.svg",
+    "static/media/instagram.svg": "/wedding-site/static/media/instagram.34e87cd7ec2ec73a31d236ef32074947.svg",
+    "static/media/hotel.svg": "/wedding-site/static/media/hotel.1ae0958b408a78a9e7e157f025dc0d4c.svg",
     "static/media/aperitif.svg": "/wedding-site/static/media/aperitif.88d2ffdc242bd27f8e6021518a10197a.svg",
-    "static/media/coffee.svg": "/wedding-site/static/media/coffee.389af2f9ec02df6f3b879d9fbc0a963c.svg",
     "index.html": "/wedding-site/index.html",
-    "static/media/hotel.svg": "/wedding-site/static/media/hotel.f1b695b82c86a3a5b6ddd69d33a289e8.svg",
+    "static/media/facebook.svg": "/wedding-site/static/media/facebook.256a8e27f85ff909c10483712152c537.svg",
     "main.98ec47ca.css.map": "/wedding-site/static/css/main.98ec47ca.css.map",
-    "main.c6e313d0.js.map": "/wedding-site/static/js/main.c6e313d0.js.map",
+    "main.9dacac47.js.map": "/wedding-site/static/js/main.9dacac47.js.map",
     "787.097afb99.chunk.js.map": "/wedding-site/static/js/787.097afb99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98ec47ca.css",
-    "static/js/main.c6e313d0.js"
+    "static/js/main.9dacac47.js"
   ]
 }
