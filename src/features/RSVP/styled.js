@@ -6,6 +6,10 @@ export const Entry = styled.div`
   justify-content: center;
   font-size: 100px;
   text-transform: uppercase;
+
+  @media (max-width: 630px) {
+    font-size: 50px;
+  }
 `;
 
 export const Date = styled.div`
@@ -15,6 +19,10 @@ export const Date = styled.div`
   border-left: solid black 2px;
   border-right: solid black 2px;
   padding: 0 50px;
+
+  @media (max-width: 630px) {
+    padding: 0 25px;
+  }
 `;
 
 export const Ornament = styled.div`
@@ -27,4 +35,9 @@ export const Ornament = styled.div`
   height: 100%;
   color: white;
   border-radius: 5px;
+
+  @media (max-width: 630px) {
+    font-size: 30px;
+    width: 110px;
+  }
 `;

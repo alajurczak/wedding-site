@@ -30,11 +30,20 @@ export const Button = styled.button`
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 530px) {
+    font-size: 20px;
+  }
 `;
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+  @media (max-width: 530px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 `;
 
 export const Wrapper = styled.div`
