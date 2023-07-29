@@ -1,6 +1,7 @@
 import { Navigation } from "../../common/Navigation";
 import { RSVPForm } from "../../common/RSVPForm";
 import { Entry, Date, Ornament } from "./styled";
+import { Footer } from "../../common/Footer";
 
 export const RSVP = () => {
   return (
@@ -14,6 +15,7 @@ export const RSVP = () => {
       </Entry>
       <Ornament>RSVP</Ornament>
       <RSVPForm />
+      <Footer />
     </>
   );
 };

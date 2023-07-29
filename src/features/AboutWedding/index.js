@@ -20,6 +20,7 @@ import {
 import { Navigation } from "../../common/Navigation";
 import { Tile } from "../../common/Tile";
 import { ReactComponent as SmallLocation } from "./map.svg";
+import { Footer } from "../../common/Footer";
 
 export const AboutWedding = () => {
   const googleMapsLink = "https://goo.gl/maps/wU7mLbbh4PuXpgZQA";
@@ -59,6 +60,7 @@ export const AboutWedding = () => {
         </WrapperLink>
       </Informations>
       <Tile />
+      <Footer />
     </>
   );
 };

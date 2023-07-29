@@ -1,5 +1,6 @@
 import { Navigation } from "../../common/Navigation";
 import { Entry, QandA, Tiles, Tile, Title, Description } from "./styled";
+import { Footer } from "../../common/Footer";
 
 export const QAPage = () => {
   return (
@@ -54,6 +55,7 @@ export const QAPage = () => {
           </Description>
         </Tile>
       </Tiles>
+      <Footer />
     </>
   );
 };
