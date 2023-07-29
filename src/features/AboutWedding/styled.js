@@ -175,3 +175,26 @@ export const Location = styled.div`
     display: none;
   }
 `;
+
+export const WrapperSmallLocation = styled.div`
+  display: none;
+
+  @media (max-width: 650px) {
+    display: block;
+    padding: 20px;
+    border: solid 2px black;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 48px 2px rgba(204, 148, 155, 1);
+    -moz-box-shadow: 0px 0px 48px 2px rgba(204, 148, 155, 1);
+    box-shadow: 0px 0px 48px 2px rgba(204, 148, 155, 1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;

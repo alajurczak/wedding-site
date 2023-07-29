@@ -15,9 +15,11 @@ import {
   Address,
   WrapperLink,
   Location,
+  WrapperSmallLocation,
 } from "./styled";
 import { Navigation } from "../../common/Navigation";
 import { Tile } from "../../common/Tile";
+import { ReactComponent as SmallLocation } from "./map.svg";
 
 export const AboutWedding = () => {
   const googleMapsLink = "https://goo.gl/maps/wU7mLbbh4PuXpgZQA";
@@ -51,6 +53,9 @@ export const AboutWedding = () => {
           rel="noopener noreferrer"
         >
           <Location></Location>
+          <WrapperSmallLocation>
+            <SmallLocation></SmallLocation>
+          </WrapperSmallLocation>
         </WrapperLink>
       </Informations>
       <Tile />
