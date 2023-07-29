@@ -1,20 +1,43 @@
+import { useEffect, useRef, useState } from "react";
 import {
   NavContainer,
   NavigationLogo,
   NavigationList,
   StyledNavLink,
   LogoLink,
+  MenuButton,
 } from "./styled";
 
 export const Navigation = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef();
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
   return (
-    <NavContainer>
+    <NavContainer ref={navRef}>
       <NavigationLogo>
         <li>
           <LogoLink to="/initialSite"></LogoLink>
         </li>
       </NavigationLogo>
-      <NavigationList>
+      <MenuButton onClick={handleMenuToggle}>☰</MenuButton>
+      <NavigationList isOpen={isMenuOpen}>
         <li>
           <StyledNavLink to="/aboutWedding">STRONA GŁÓWNA</StyledNavLink>
         </li>

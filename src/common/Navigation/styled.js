@@ -21,6 +21,13 @@ export const NavigationList = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   }
 `;
 
@@ -83,5 +90,19 @@ export const NavigationLogo = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     display: none;
+  }
+`;
+
+export const MenuButton = styled.button`
+  display: none;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    display: block;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
   }
 `;
