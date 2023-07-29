@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
 `;
 export const Tiles = styled.div`
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
