@@ -32,7 +32,7 @@ export const AboutWedding = () => {
         </OurDay>
         <Names>ALICJA & DOMINIK</Names>
         <DateAndPlace>
-          <Date>maj 30, 2025</Date>
+          <Date>xxx xx, xxxx</Date>
           <Separator></Separator>
           <Place>warszawa</Place>
         </DateAndPlace>

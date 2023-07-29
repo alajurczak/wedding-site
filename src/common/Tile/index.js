@@ -12,7 +12,7 @@ export const Tile = () => {
         <IconCeremony />
         <Content>
           <Title>ceremonia</Title>
-          <Description>godzina 15:00</Description>
+          <Description>godzina xxxx</Description>
           <Description>Pamiętaj, żeby przybyć wcześnie</Description>
         </Content>
       </Tiles>
@@ -20,7 +20,7 @@ export const Tile = () => {
         <IconAperitif />
         <Content>
           <Title>aperitif</Title>
-          <Description>godzina 16:00</Description>
+          <Description>godzina xxxx</Description>
           <Description>koktajle i przystawki </Description>
         </Content>
       </Tiles>
@@ -28,7 +28,7 @@ export const Tile = () => {
         <IconReception />
         <Content>
           <Title>przyjęcie</Title>
-          <Description>godzina 17:00</Description>
+          <Description>godzina xxxx</Description>
           <Description>kolacja, drinki & tańce</Description>
         </Content>
       </Tiles>
@@ -44,7 +44,7 @@ export const Tile = () => {
         <IconBreakfast />
         <Content>
           <Title>śniadanie</Title>
-          <Description>do godziny 12:00</Description>
+          <Description>do godziny xxxx</Description>
           <Description>śniadanie po weselnej nocy</Description>
         </Content>
       </Tiles>

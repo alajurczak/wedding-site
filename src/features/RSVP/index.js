@@ -9,7 +9,7 @@ export const RSVP = () => {
       <Entry>
         <Date>
           <div>maj</div>
-          <div>30, 2023</div>
+          <div>xx, xxxx</div>
         </Date>
       </Entry>
       <Ornament>RSVP</Ornament>
