@@ -21,6 +21,10 @@ export const OurDay = styled.div`
   @media (max-width: 650px) {
     font-size: 150px;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 50px;
+  }
 `;
 export const Our = styled.p`
   font-family: "Gwendolyn";
@@ -38,6 +42,9 @@ export const Day = styled.p`
   @media (max-width: 650px) {
     font-size: 130px;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 50px;
+  }
 `;
 export const Names = styled.div`
   font-size: 75px;
@@ -49,6 +56,10 @@ export const Names = styled.div`
 
   @media (max-width: 650px) {
     font-size: 30px;
+    text-align: center;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 20px;
   }
 `;
 export const DateAndPlace = styled.div`
@@ -66,6 +77,10 @@ export const DateAndPlace = styled.div`
   @media (max-width: 650px) {
     font-size: 30px;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    font-size: 20px;
+    margin: 15px;
+  }
 `;
 export const Date = styled.p`
   margin: 20px 0;
@@ -75,7 +90,8 @@ export const Place = styled.p`
   font-size: 40px;
 
   @media (max-width: 650px) {
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0;
   }
 `;
 
@@ -96,6 +112,9 @@ export const Informations = styled.div`
   @media (max-width: 1500px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
+    margin: 0 auto;
+  }
 `;
 export const Description = styled.div`
   align-self: center;
@@ -111,7 +130,8 @@ export const Title = styled.p`
   }
 
   @media (max-width: 650px) {
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
   }
 `;
 export const MainInformations = styled.div`
@@ -126,10 +146,16 @@ export const Address = styled.p`
 
   @media (max-width: 650px) {
     font-size: 20px;
+    text-align: center;
   }
 `;
 
-export const WrapperLink = styled.a``;
+export const WrapperLink = styled.a`
+  @media (max-width: 1500px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const Location = styled.div`
   justify-self: center;
@@ -143,5 +169,9 @@ export const Location = styled.div`
     background-size: cover;
     height: 300px;
     width: 500px;
+  }
+
+  @media (max-width: 650px) {
+    display: none;
   }
 `;

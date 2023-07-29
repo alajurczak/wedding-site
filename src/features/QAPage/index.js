@@ -39,9 +39,9 @@ export const QAPage = () => {
           </Description>
         </Tile>
         <Tile>
-          <Title>Do kiedy należy potwierdzić obecnośc?</Title>
+          <Title>Do kiedy należy potwierdzić obecność?</Title>
           <Description>
-            Prosimy o potwierdzenie do xx miesiąc, abyśmy mieli dokładną liczbę
+            Prosimy o potwierdzenie do xx xxxxxx, abyśmy mieli dokładną liczbę
             gości
           </Description>
         </Tile>
