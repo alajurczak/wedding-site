@@ -80,4 +80,8 @@ export const LogoLink = styled(NavLink)`
 export const NavigationLogo = styled.div`
   list-style-type: none;
   margin: 0 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
+    display: none;
+  }
 `;

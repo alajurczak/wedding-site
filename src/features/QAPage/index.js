@@ -6,7 +6,7 @@ export const QAPage = () => {
     <>
       <Navigation />
       <Entry>
-        <QandA>Q&A</QandA>
+        <QandA>FAQ</QandA>
       </Entry>
       <Tiles>
         <Tile>

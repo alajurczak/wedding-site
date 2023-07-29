@@ -59,7 +59,7 @@ export const InitialSite = () => {
                 style={{ animationDelay: "0.4s" }}
                 onMouseEnter={() => handleLinkHover(3)}
               >
-                Q&A
+                FAQ
               </StyledNavLink>
             </li>
             <li>
