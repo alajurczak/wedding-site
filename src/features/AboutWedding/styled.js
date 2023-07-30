@@ -23,7 +23,7 @@ export const OurDay = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
-    font-size: 50px;
+    font-size: 80px;
   }
 `;
 export const Our = styled.p`
@@ -43,7 +43,7 @@ export const Day = styled.p`
     font-size: 130px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMin}px) {
-    font-size: 50px;
+    font-size: 70px;
   }
 `;
 export const Names = styled.div`
