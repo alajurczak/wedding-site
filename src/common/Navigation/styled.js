@@ -95,6 +95,7 @@ export const NavigationLogo = styled.div`
 
 export const MenuButton = styled.button`
   display: none;
+  color: black;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
     display: block;
