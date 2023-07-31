@@ -8,14 +8,20 @@ export const Container = styled.div`
   padding: 0 20px;
 `;
 
-export const Aside = styled.aside``;
+export const Aside = styled.aside`
+  position: relative;
+`;
 
 export const AsideLogo = styled.aside`
   background-image: url(${logo});
-  height: 750px;
+  height: 805px;
   width: 200px;
   background-size: contain;
   background-repeat: no-repeat;
+  position: fixed;
+  top: 1;
+  left: 0;
+  bottom: 0;
 `;
 
 export const Section = styled.section`

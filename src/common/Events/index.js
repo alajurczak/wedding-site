@@ -1,10 +1,15 @@
 import {
   Container,
   EventWrapper,
-  Event,
-  Description,
-  EventImage,
-  Time,
+  EventRight,
+  EventLeft,
+  DescriptionRight,
+  DescriptionLeft,
+  EventImageRight,
+  EventImageLeft,
+  TimeRight,
+  TimeLeft,
+  Line,
 } from "./styled";
 import { ReactComponent as Church } from "./church.svg";
 import { ReactComponent as Cheers } from "./cheers.svg";
@@ -21,83 +26,102 @@ export const Events = () => {
     <>
       <Container>
         <EventWrapper>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
-          <EventImage>
+          <EventLeft>
+            <TimeRight>15:00</TimeRight>
+            <DescriptionRight>Ceremonia zaślubin</DescriptionRight>
+          </EventLeft>
+          <Line></Line>
+          <EventImageLeft>
             <Church />
-          </EventImage>
+          </EventImageLeft>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImage>
+          <EventImageRight>
             <Cheers />
-          </EventImage>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
+          </EventImageRight>
+          <Line></Line>
+          <EventRight>
+            <TimeLeft>16:30</TimeLeft>
+            <DescriptionLeft>Toast za Młodą Parę i życzenia</DescriptionLeft>
+          </EventRight>
         </EventWrapper>
 
         <EventWrapper>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
-          <EventImage>
-            <Church />
-          </EventImage>
+          <EventLeft>
+            <TimeRight>17:00</TimeRight>
+            <DescriptionRight>Uroczysty obiad</DescriptionRight>
+          </EventLeft>
+          <Line></Line>
+          <EventImageLeft>
+            <Meal />
+          </EventImageLeft>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImage>
-            <Cheers />
-          </EventImage>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
+          <EventImageRight>
+            <Dance />
+          </EventImageRight>
+          <Line></Line>
+          <EventRight>
+            <TimeLeft>18:00</TimeLeft>
+            <DescriptionLeft>Pierwszy taniec</DescriptionLeft>
+          </EventRight>
         </EventWrapper>
 
         <EventWrapper>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
-          <EventImage>
-            <Church />
-          </EventImage>
+          <EventLeft>
+            <TimeRight>20:00</TimeRight>
+            <DescriptionRight>Tort</DescriptionRight>
+          </EventLeft>
+          <Line></Line>
+          <EventImageLeft>
+            <Cake />
+          </EventImageLeft>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImage>
-            <Cheers />
-          </EventImage>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
+          <EventImageRight>
+            <Cooking />
+          </EventImageRight>
+          <Line></Line>
+          <EventRight>
+            <TimeLeft>21:00</TimeLeft>
+            <DescriptionLeft>Live cooking</DescriptionLeft>
+          </EventRight>
         </EventWrapper>
 
         <EventWrapper>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
-          <EventImage>
-            <Church />
-          </EventImage>
+          <EventLeft>
+            <TimeRight>22:00</TimeRight>
+            <DescriptionRight>Niespodzianka</DescriptionRight>
+          </EventLeft>
+          <Line></Line>
+          <EventImageLeft>
+            <Gift />
+          </EventImageLeft>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImage>
-            <Cheers />
-          </EventImage>
-          <Event>
-            <Time>15:00</Time>
-            <Description>Ceremonia zaślubin</Description>
-          </Event>
+          <EventImageRight>
+            <Fireworks />
+          </EventImageRight>
+          <Line></Line>
+          <EventRight>
+            <TimeLeft>00:00</TimeLeft>
+            <DescriptionLeft>Fajerwerki</DescriptionLeft>
+          </EventRight>
+        </EventWrapper>
+
+        <EventWrapper>
+          <EventLeft>
+            <TimeRight>∞</TimeRight>
+            <DescriptionRight>Zabawa do rana</DescriptionRight>
+          </EventLeft>
+          <Line></Line>
+          <EventImageLeft>
+            <Party />
+          </EventImageLeft>
         </EventWrapper>
       </Container>
     </>
