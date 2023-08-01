@@ -1,15 +1,10 @@
 import {
   Container,
   EventWrapper,
-  EventRight,
-  EventLeft,
-  DescriptionRight,
-  DescriptionLeft,
-  EventImageRight,
-  EventImageLeft,
-  TimeRight,
-  TimeLeft,
-  Line,
+  Event,
+  Description,
+  EventImage,
+  Time,
 } from "./styled";
 import { ReactComponent as Church } from "./church.svg";
 import { ReactComponent as Cheers } from "./cheers.svg";
@@ -26,102 +21,93 @@ export const Events = () => {
     <>
       <Container>
         <EventWrapper>
-          <EventLeft>
-            <TimeRight>15:00</TimeRight>
-            <DescriptionRight>Ceremonia zaślubin</DescriptionRight>
-          </EventLeft>
-          <Line></Line>
-          <EventImageLeft>
+          <EventImage>
             <Church />
-          </EventImageLeft>
+          </EventImage>
+          <Event>
+            <Time>15:00</Time>
+            <Description>Ceremonia zaślubin</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImageRight>
+          <EventImage>
             <Cheers />
-          </EventImageRight>
-          <Line></Line>
-          <EventRight>
-            <TimeLeft>16:30</TimeLeft>
-            <DescriptionLeft>Toast za Młodą Parę i życzenia</DescriptionLeft>
-          </EventRight>
+          </EventImage>
+          <Event>
+            <Time>16:30</Time>
+            <Description>Toast za Młodą Parę i życzenia</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventLeft>
-            <TimeRight>17:00</TimeRight>
-            <DescriptionRight>Uroczysty obiad</DescriptionRight>
-          </EventLeft>
-          <Line></Line>
-          <EventImageLeft>
+          <EventImage>
             <Meal />
-          </EventImageLeft>
+          </EventImage>
+          <Event>
+            <Time>17:00</Time>
+            <Description>Uroczysty obiad</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImageRight>
+          <EventImage>
             <Dance />
-          </EventImageRight>
-          <Line></Line>
-          <EventRight>
-            <TimeLeft>18:00</TimeLeft>
-            <DescriptionLeft>Pierwszy taniec</DescriptionLeft>
-          </EventRight>
+          </EventImage>
+          <Event>
+            <Time>18:00</Time>
+            <Description>Pierwszy taniec</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventLeft>
-            <TimeRight>20:00</TimeRight>
-            <DescriptionRight>Tort</DescriptionRight>
-          </EventLeft>
-          <Line></Line>
-          <EventImageLeft>
+          <EventImage>
             <Cake />
-          </EventImageLeft>
+          </EventImage>
+          <Event>
+            <Time>20:00</Time>
+            <Description>Tort</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImageRight>
+          <EventImage>
             <Cooking />
-          </EventImageRight>
-          <Line></Line>
-          <EventRight>
-            <TimeLeft>21:00</TimeLeft>
-            <DescriptionLeft>Live cooking</DescriptionLeft>
-          </EventRight>
+          </EventImage>
+          <Event>
+            <Time>21:00</Time>
+            <Description>Live cooking</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventLeft>
-            <TimeRight>22:00</TimeRight>
-            <DescriptionRight>Niespodzianka</DescriptionRight>
-          </EventLeft>
-          <Line></Line>
-          <EventImageLeft>
+          <EventImage>
             <Gift />
-          </EventImageLeft>
+          </EventImage>
+          <Event>
+            <Time>22:00</Time>
+            <Description>Niespodzianka</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventImageRight>
+          <EventImage>
             <Fireworks />
-          </EventImageRight>
-          <Line></Line>
-          <EventRight>
-            <TimeLeft>00:00</TimeLeft>
-            <DescriptionLeft>Fajerwerki</DescriptionLeft>
-          </EventRight>
+          </EventImage>
+          <Event>
+            <Time>00:00</Time>
+            <Description>Fajerwerki</Description>
+          </Event>
         </EventWrapper>
 
         <EventWrapper>
-          <EventLeft>
-            <TimeRight>∞</TimeRight>
-            <DescriptionRight>Zabawa do rana</DescriptionRight>
-          </EventLeft>
-          <Line></Line>
-          <EventImageLeft>
+          <EventImage>
             <Party />
-          </EventImageLeft>
+          </EventImage>
+          <Event>
+            <Time>∞</Time>
+            <Description>Zabawa do rana</Description>
+          </Event>
         </EventWrapper>
       </Container>
     </>

@@ -10,6 +10,10 @@ export const Container = styled.div`
 
 export const Aside = styled.aside`
   position: relative;
+
+  @media (max-width: 860px) {
+    display: none;
+  }
 `;
 
 export const AsideLogo = styled.aside`
@@ -35,6 +39,11 @@ export const Section = styled.section`
 
 export const SectionHeader = styled.div`
   font-size: 50px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   margin: 10px 0;
+
+  @media (max-width: 530px) {
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
 `;

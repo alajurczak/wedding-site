@@ -7,60 +7,56 @@ export const EventWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: end;
+  align-items: center;
+  margin: 30px 0;
+
+  @media (max-width: 530px) {
+    margin: 15px 0;
+  }
 `;
-export const EventRight = styled.div`
-  width: 250px;
-  border-bottom: solid 2px black;
-  padding-left: 10px;
-`;
-export const EventLeft = styled.div`
-  width: 250px;
-  border-bottom: solid 2px black;
-  padding-right: 10px;
-`;
-export const TimeRight = styled.p`
-  text-align: right;
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 45px;
+export const Event = styled.div`
+  width: 350px;
+
+  @media (max-width: 530px) {
+    width: 150px;
+  }
 `;
 
-export const TimeLeft = styled.p`
-  text-align: left;
+export const Time = styled.p`
+  text-align: center;
   margin: 0;
-  margin-bottom: 10px;
   font-size: 45px;
+  padding-bottom: 5px;
+  border-bottom: 2px black solid;
+
+  @media (max-width: 530px) {
+    font-size: 25px;
+    border-bottom: 1px black solid;
+  }
 `;
-export const DescriptionRight = styled.p`
-  text-align: right;
+
+export const Description = styled.p`
+  text-align: center;
   margin: 0;
   margin-bottom: 10px;
   font-size: 20px;
+  text-transform: uppercase;
+
+  @media (max-width: 530px) {
+    font-size: 15px;
+  }
 `;
-export const DescriptionLeft = styled.p`
-  text-align: left;
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 20px;
-`;
-export const EventImageRight = styled.div`
-  width: 250px;
+
+export const EventImage = styled.div`
+  width: 150px;
   display: flex;
-  justify-content: right;
-  border-bottom: solid 2px black;
-  padding: 0 10px 10px 10px;
-`;
-export const EventImageLeft = styled.div`
-  width: 250px;
-  display: flex;
-  justify-content: left;
-  border-bottom: solid 2px black;
-  padding: 0 10px 10px 10px;
-`;
-export const Line = styled.div`
-  width: 1px;
-  height: 97px;
-  background-color: black;
-  border: 1px solid black;
+  justify-content: center;
+  align-self: end;
+  padding: 0 60px 10px 10px;
+
+  @media (max-width: 530px) {
+    padding: 0 5px 10px;
+    width: 100px;
+    justify-content: start;
+  }
 `;
