@@ -1,25 +1,35 @@
 {
   "files": {
     "main.css": "/wedding-site/static/css/main.98ec47ca.css",
-    "main.js": "/wedding-site/static/js/main.55bb0f44.js",
+    "main.js": "/wedding-site/static/js/main.fe37f7a5.js",
     "static/js/787.097afb99.chunk.js": "/wedding-site/static/js/787.097afb99.chunk.js",
     "static/media/location.png": "/wedding-site/static/media/location.2388847115d1d7c192dd.png",
+    "static/media/asideLogo.png": "/wedding-site/static/media/asideLogo.a617172daa24ca8120e4.png",
     "static/media/Logo.png": "/wedding-site/static/media/Logo.f3d1fc699dac07a0e087.png",
     "static/media/reception.svg": "/wedding-site/static/media/reception.0876c06272b7234627c5971800111db4.svg",
     "static/media/map.svg": "/wedding-site/static/media/map.0fc68b60cbd05997de24294a9d0192c7.svg",
+    "static/media/cake.svg": "/wedding-site/static/media/cake.302c5bdabbb37be48d2d83e3c04eaf4b.svg",
+    "static/media/cheers.svg": "/wedding-site/static/media/cheers.e53ad0d3a9758ba0311ee42c87eb03ea.svg",
+    "static/media/cooking.svg": "/wedding-site/static/media/cooking.4219efc463faf4e7bde4c1faa8c8e1b5.svg",
+    "static/media/party.svg": "/wedding-site/static/media/party.94b6bfb3fbc9507a8365e6a81b3ff285.svg",
     "static/media/coffee.svg": "/wedding-site/static/media/coffee.2c11f77bb9e0b75c1bf9bd1db65dafa7.svg",
     "static/media/ceremony.svg": "/wedding-site/static/media/ceremony.f5deca8c24ab42d4c0575f24aade9b5e.svg",
+    "static/media/fireworks.svg": "/wedding-site/static/media/fireworks.adf0301a6429891ce1d9c3ce41ca9c77.svg",
     "static/media/instagram.svg": "/wedding-site/static/media/instagram.34e87cd7ec2ec73a31d236ef32074947.svg",
+    "static/media/meal.svg": "/wedding-site/static/media/meal.99db294d01c1c4e9dab603869985c523.svg",
+    "static/media/dance.svg": "/wedding-site/static/media/dance.301fa1f53f4fbda5171a7276390794ba.svg",
+    "static/media/church.svg": "/wedding-site/static/media/church.384d341434ac4f853e1c943a445479d5.svg",
+    "static/media/gift.svg": "/wedding-site/static/media/gift.f0036d7883ab9629ed0d5a1dd40d2eb0.svg",
     "static/media/hotel.svg": "/wedding-site/static/media/hotel.1ae0958b408a78a9e7e157f025dc0d4c.svg",
     "static/media/aperitif.svg": "/wedding-site/static/media/aperitif.88d2ffdc242bd27f8e6021518a10197a.svg",
     "index.html": "/wedding-site/index.html",
     "static/media/facebook.svg": "/wedding-site/static/media/facebook.256a8e27f85ff909c10483712152c537.svg",
     "main.98ec47ca.css.map": "/wedding-site/static/css/main.98ec47ca.css.map",
-    "main.55bb0f44.js.map": "/wedding-site/static/js/main.55bb0f44.js.map",
+    "main.fe37f7a5.js.map": "/wedding-site/static/js/main.fe37f7a5.js.map",
     "787.097afb99.chunk.js.map": "/wedding-site/static/js/787.097afb99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98ec47ca.css",
-    "static/js/main.55bb0f44.js"
+    "static/js/main.fe37f7a5.js"
   ]
 }
