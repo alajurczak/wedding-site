@@ -60,8 +60,20 @@ function App() {
             {/* <Route path="/photos" element={<AboutWedding />} /> */}
           </>
         )}
-        <Route path="/" element={<Navigate to="/loginSite" />} />
-        <Route path="*" element={<LoginPage handleLogin={handleLogin} />} />
+        <Route
+          path="/"
+          element={isLoggedIn ? <InitialSite /> : <Navigate to="/loginSite" />}
+        />
+        <Route
+          path="*"
+          element={
+            isLoggedIn ? (
+              <InitialSite />
+            ) : (
+              <LoginPage handleLogin={handleLogin} />
+            )
+          }
+        />
       </Routes>
     </HashRouter>
   );
