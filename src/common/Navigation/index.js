@@ -7,8 +7,12 @@ import {
   LogoLink,
   MenuButton,
 } from "./styled";
+import { LogoutButton } from "../LogoutButton";
+import { useContext } from "react";
+import { AuthContext } from "../../App";
 
 export const Navigation = () => {
+  const { setLoggedIn } = useContext(AuthContext);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const navRef = useRef();
 
@@ -28,6 +32,11 @@ export const Navigation = () => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, []);
+
+  const handleLogout = () => {
+    console.log("Logging out...");
+    setLoggedIn(false);
+  };
 
   return (
     <NavContainer ref={navRef}>
@@ -56,6 +65,7 @@ export const Navigation = () => {
         <li>
           <StyledNavLink to="/photos">ZDJĘCIA ŚLUBNE</StyledNavLink>
         </li>
+        <LogoutButton handleLogout={handleLogout} />
       </NavigationList>
     </NavContainer>
   );

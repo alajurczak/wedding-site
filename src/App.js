@@ -12,7 +12,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { useEffect } from "react";
-import { useState } from "react";
+import { useState, createContext } from "react";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +23,7 @@ function ScrollToTop() {
 
   return null;
 }
+export const AuthContext = createContext();
 
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -35,46 +36,48 @@ function App() {
     }
   };
 
-  const handleLogout = () => {
-    setLoggedIn(false);
-  };
-
   return (
     <HashRouter>
       <ScrollToTop />
-      <Routes>
-        {!isLoggedIn && (
+      <AuthContext.Provider value={{ isLoggedIn, setLoggedIn }}>
+        <Routes>
+          {!isLoggedIn && (
+            <>
+              <Route
+                path="/loginSite"
+                element={<LoginPage handleLogin={handleLogin} />}
+              />
+            </>
+          )}
+          {isLoggedIn && (
+            <>
+              <Route path="/initialSite" element={<InitialSite />} />
+              <Route path="/aboutWedding" element={<AboutWedding />} />
+              <Route path="/invitations" element={<RSVP />} />
+              <Route path="/qa" element={<QAPage />} />
+              <Route path="/schedule" element={<Schedule />} />
+              {/* <Route path="/guestbook" element={<AboutWedding />} /> */}
+              {/* <Route path="/photos" element={<AboutWedding />} /> */}
+            </>
+          )}
           <Route
-            path="/loginSite"
-            element={<LoginPage handleLogin={handleLogin} />}
+            path="/"
+            element={
+              isLoggedIn ? <InitialSite /> : <Navigate to="/loginSite" />
+            }
           />
-        )}
-        {isLoggedIn && (
-          <>
-            <Route path="/initialSite" element={<InitialSite />} />
-            <Route path="/aboutWedding" element={<AboutWedding />} />
-            <Route path="/invitations" element={<RSVP />} />
-            <Route path="/qa" element={<QAPage />} />
-            <Route path="/schedule" element={<Schedule />} />
-            {/* <Route path="/guestbook" element={<AboutWedding />} /> */}
-            {/* <Route path="/photos" element={<AboutWedding />} /> */}
-          </>
-        )}
-        <Route
-          path="/"
-          element={isLoggedIn ? <InitialSite /> : <Navigate to="/loginSite" />}
-        />
-        <Route
-          path="*"
-          element={
-            isLoggedIn ? (
-              <InitialSite />
-            ) : (
-              <LoginPage handleLogin={handleLogin} />
-            )
-          }
-        />
-      </Routes>
+          <Route
+            path="*"
+            element={
+              isLoggedIn ? (
+                <InitialSite />
+              ) : (
+                <LoginPage handleLogin={handleLogin} />
+              )
+            }
+          />
+        </Routes>
+      </AuthContext.Provider>
     </HashRouter>
   );
 }
