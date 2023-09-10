@@ -28,8 +28,11 @@ export const AuthContext = createContext();
 function App() {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
+  const correctUsername = process.env.REACT_APP_USERNAME;
+  const correctPassword = process.env.REACT_APP_PASSWORD;
+
   const handleLogin = (username, password) => {
-    if (username === "admin" && password === "password") {
+    if (username === correctUsername && password === correctPassword) {
       setLoggedIn(true);
     } else {
       alert("Niepoprawny login lub hasło!");
